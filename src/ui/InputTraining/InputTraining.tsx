@@ -14,7 +14,7 @@ export const InputTraining: FC<IInputTrainingProps> = ( props ) => {
   const id = workout.length
   console.log(id)
   const [contextInput, setInput] = useState({
-    id: id,
+    id: 0,
     date: '',
     length: 0
   })
@@ -32,7 +32,8 @@ const handlerOnChange = (evt:React.ChangeEvent<HTMLInputElement>) => {
   const { name, value } = evt.target
   setInput((prev) => ({
     ...prev, 
-    [name]: value
+    [name]: value, 
+    id: id
   }))
   console.log(contextInput)
 }
