@@ -2,10 +2,12 @@ li {
     display: flex;
 }
 
-/* text {
-    width: 400px;
-} */
-
-.view {
-    margin: 50px;
+table {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 20px;
+}
+button {
+    margin: 1px;
 }

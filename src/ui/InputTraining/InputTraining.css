@@ -5,6 +5,7 @@ input {
     margin: 10px;
     background-color: #f9f9f9;
     transition: border-color 0.25s;
+    color: black;
 }
 
 input:hover {

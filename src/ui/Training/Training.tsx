@@ -15,7 +15,8 @@ export const Training = () => {
         <InputTraining 
         workout={workout}
         addHandler={addWorkout}/>
-        <ViewTraining workout={workout}/>
+        <ViewTraining workout={workout}
+        addHandler={addWorkout}/>
     </div>
   )
 }
