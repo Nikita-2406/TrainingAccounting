@@ -9,16 +9,21 @@ interface IViewTrainingProps {
 export const ViewTraining:FC<IViewTrainingProps> = (props) => {
   const {workout} = props
   let view: Array<ReactNode> = []
-  console.log(workout)
   for (const work of workout) {
+    // console.log(work)
     view.push(<li key={work.id}>
-        <div className='text'>{work.date}</div>
-        <div className='text'>{work.length}</div>
-        <button className='text'>✘</button>
+        <div className='view'>{work.date}</div>
+        <div className='view'>{work.length}</div>
+        <button className='view'>✘</button>
       </li>)
   }
   return (
     <ul>
+      <li>
+        <span>Date:</span>
+        <span>Length:</span>
+        <span>Действие:</span>
+      </li>
       {view}
     </ul>
   )

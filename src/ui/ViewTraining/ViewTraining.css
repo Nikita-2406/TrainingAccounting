@@ -2,6 +2,10 @@ li {
     display: flex;
 }
 
-text {
+/* text {
     width: 400px;
+} */
+
+.view {
+    margin: 50px;
 }
