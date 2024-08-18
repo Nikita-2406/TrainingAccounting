@@ -1,0 +1,19 @@
+input {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    background-color: #f9f9f9;
+    transition: border-color 0.25s;
+}
+
+input:hover {
+    /* border-color: #646cff; */
+    border: 1px solid #646cff;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
