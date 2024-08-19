@@ -1,9 +1,9 @@
 import { FC, ReactNode } from 'react'
-import { IWorkoutProps } from '../Training/Training'
+import { ILocalState } from '../Training/Training'
 import './ViewTraining.css'
 
 interface IViewTrainingProps {
-  workout: Array<IWorkoutProps>
+  workout: Array<ILocalState>
   addHandler: Function
 }
 

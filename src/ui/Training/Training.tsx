@@ -2,14 +2,14 @@ import { useState } from 'react'
 import { InputTraining } from '../InputTraining/InputTraining'
 import { ViewTraining } from '../ViewTraining/ViewTraining'
 
-export interface IWorkoutProps {
+export interface ILocalState {
     id: number,
     date: string,
     length: number
 }
 
 export const Training = () => {
-    const [workout, addWorkout] = useState<Array<IWorkoutProps>>([])
+    const [workout, addWorkout] = useState<Array<ILocalState>>([])
   return (
     <div>
         <InputTraining 

@@ -1,10 +1,10 @@
 import React, { FC, useRef, useState } from 'react'
-import { IWorkoutProps } from '../Training/Training'
+import { ILocalState } from '../Training/Training'
 import './InputTraining.css'
 
 interface IInputTrainingProps {
   addHandler: Function
-  workout: Array<IWorkoutProps>
+  workout: Array<ILocalState>
 }
 
 
@@ -12,9 +12,9 @@ interface IInputTrainingProps {
 export const InputTraining: FC<IInputTrainingProps> = ( props ) => {
   let {addHandler, workout} = props
   const id = useRef(0)
-  const [contextInput, setInput] = useState<IWorkoutProps>({
+  const [contextInput, setInput] = useState<ILocalState>({
     id: 0,
-    date: '',
+    date: "",
     length: 0
   })
 
@@ -50,7 +50,7 @@ const handlerOnChange = (evt:React.ChangeEvent<HTMLInputElement>) => {
 }
   return (<form onSubmit={handlerOnSubmit}>
     <div>Date:</div>
-    <input type="text" name='date' onChange={handlerOnChange} value={contextInput.date}/>
+    <input type="date" name='date' onChange={handlerOnChange} value={contextInput.date}/>
     <div>Length: </div>
     <input type="text" name='length' onChange={handlerOnChange} value={contextInput.length}/><br/>
     <button  type='submit'>Создать</button>
